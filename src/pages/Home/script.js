@@ -45,3 +45,15 @@ PortfolioBtn.addEventListener('click',function(){
 
 })
 
+const TrabalheConnosco =  document.querySelector('.MainHeader-nav button');
+TrabalheConnosco.addEventListener('click',function(){
+  const NossosParceiros = document.querySelector('.NossoParceiroMore');
+  NossosParceiros.style.display = 'flex';
+
+  const closeIcon = document.querySelector('.NossoParceiroMore .MyContent .closeIcon');
+  closeIcon.addEventListener('click',function(){
+    NossosParceiros.style.display = 'none';
+  })
+
+})
+
