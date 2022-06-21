@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #E5E5E5;
+}
+h1,h2,h3{
+  margin: 0;
+}
+.FirstSectionMainHeader{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1448px;
+  margin: auto;
+  align-items: center;
+  padding: 30px 0;
+  transition: all 0.8s;
+
+}
+.MainHeader{
+  background-color: #E5E5E5;
+  transition: all 0.8s;
+}
+.MainHeader span {
+  display: flex;
+  align-items: center;
+}
+.MainHeader-nav{
+  display: flex;
+  gap: 15px;
+}
+.MainHeader-nav ul{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: center;
+}
+.MainHeader-nav ul li {
+  text-decoration: none;
+  list-style: none;
+}
+.MainHeader-nav ul li a{
+  color: #6C6C80;
+  text-decoration: none;
+  font-size: 2.0rem;
+  font-family: 'Roboto', sans-serif;
+}
+.MainHeader-nav button{
+  background-color: #671BC9;
+  border-radius: 24px;
+  box-shadow: 2px 4px 8px 0px #6c6c80;
+  padding:15px 25px;
+  border: none;
+}
+.MainHeader-nav button a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.0rem;
+}
+
+.MainContent{
+  background-color: #E5E5E5;
+}
+.MainContent_Wrapper{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  max-width: 1448px;
+  margin: auto;
+  justify-content:space-between;
+}
+.MainContent-img{
+  /* margin-left: 10%; */
+}
+.MainContent_Wrapper.AboutUs{
+  margin-top: -0.3%;
+}
+.MainContent-text h1{
+  font-size: 3.9rem;
+  font-family: 'Roboto', sans-serif;
+  color: #322153;
+}
+.MainContent-text p{
+  font-size: 2.0rem;
+  color: #6C6C80;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.MainContent-text a {
+text-decoration: none;
+}
+.MainContent-text button{
+  display: flex;
+  align-items: center;
+  background: #34CB79;
+  border: none;
+  padding: 0  10px 0 0px;
+  width: 41rem;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  
+}
+.MainContent_Wrapper.AboutUs button{
+  background: #8257E5;
+}
+.MainContent-text button svg{
+  background-color: #2FB86E;
+  height: 100%;
+  width: 3.4rem;
+  padding: 25px 25px;
+}
+.MainContent_Wrapper.AboutUs button svg{
+  background-color: #671BC9;
+}
+.MainContent-text button p {
+  margin: 0;
+  font-size: 2.4rem;
+  color: white;
+  padding: 0 0 0 15px;
+}
+
+.MainContent_Wrapper.Portfolio {
+flex-direction: column;
+row-gap: 2.8rem;
+}
+.MainContent-textPortfolio{
+  width: 100%;
+}
+.MainContent-textPortfolio h1 {
+  font-size: 3.9rem;
+  font-family: 'Roboto', sans-serif;
+  color: #322153;
+  text-align: end;
+}
+.MainContent-gridLayout {
+display: grid;
+grid-template-columns: auto auto auto;
+gap: 10px;
+padding: 10px;
+}
+.MainContent-gridLayout .item1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.MainContent-gridLayout .item2{
+  grid-column-start: 3;
+  grid-column-end: 5;
+
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.MainContent-gridLayout .item3{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.MainContent-gridLayout .item4{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.MainContent-gridLayout .item5{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.MainContent-gridLayout .item6{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.MainContent-gridLayout img{
+  cursor: pointer;
+  filter: brightness(70%);
+  transition: all 0.8s;
+}
+.MainContent-gridLayout img:hover{
+  filter: brightness(100%);
+}
+.MainContent_Wrapper.Portfolio button{
+  display: flex;
+  align-items: center;
+  background: #34CB79;
+  border: none;
+  padding: 0 10px 0 0px;
+  width: 41rem;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.MainContent_Wrapper.Portfolio button svg{
+  background-color: #2FB86E;
+  height: 100%;
+  width: 3.4rem;
+  padding: 25px 25px;
+}
+.MainContent_Wrapper.Portfolio button p{
+  margin: 0;
+  font-size: 2.4rem;
+  color: white;
+  padding: 0 0 0 15px;
+}
+.MainContent_Wrapper.NossoTeam {
+flex-direction: column;
+row-gap: 2.8rem;
+height: 100vh;
+justify-content: center;
+}
+.MainContent-textNossoTeam {
+width: 100%;
+}
+.MainContent-textNossoTeam h1{
+  font-size: 3.9rem;
+  font-family: 'Roboto', sans-serif;
+  color: #322153;
+}
+.MainContent-Team {
+display: flex;
+gap: 15px;
+}
+.MainContent-TeamElement {
+width: 21rem;
+}
+.MainContent-TeamElement p{
+  font-size: 1.6rem;
+  color: #6C6C80;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.MainContent_Wrapper.Contatos {
+background: #BDBDBD;
+position: relative;
+display: flex;
+height: 100vh;
+width: 100%;
+}
+.MainContentFaixa {
+background: #2FB86E;
+width: 100%;
+height: 8rem;
+}
+.MainContent-ContactForm {
+position: absolute;
+top: 13%;
+left: 25%;
+background: #F0F0F5;
+display: flex;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 38px;
+gap: 20px;
+padding: 30px;
+}
+.MainContent-ContactBy div {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+.MainContent-ContactForm_Input {
+display: flex;
+flex-direction: column;
+gap: 15px;
+justify-content: center;
+}
+.MainContent-ContactForm_Text {
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+}
+.MainContent-ContactForm_Text h2{
+  font-size: 3.9rem;
+  font-family: 'Roboto', sans-serif;
+  color: #322153;
+}
+.MainContent-ContactBy div p {
+  font-size: 1.6rem;
+  color: #6C6C80;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.MainContent-ContactBy {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.MainContent-ContactForm_Input input,textarea {
+border: none;
+background: #C4C4C4;
+padding: 15px;
+border-radius: 7px;
+width: 38rem;
+}
+.MainContent-ContactForm_Input button{
+  display: flex;
+  align-items: center;
+  background: #34CB79;
+  border: none;
+  padding: 0 10px 0 0px;
+  width: 41rem;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.MainContent-ContactForm_Input button svg{
+  background-color: #2FB86E;
+  height: 100%;
+  width: 3.4rem;
+  padding: 25px 25px;
+}
+.MainContent-ContactForm_Input button p{
+  margin: 0;
+  font-size: 2.4rem;
+  color: white;
+  padding: 0 0 0 15px;
+}
+footer {
+background: #671BC9;
+}
+.MainContent_Wrapper.footer {
+justify-content: center;
+padding: 10rem 0;
+}
+.footer-icons {
+display: flex;
+gap: 20px;
+}
+.QuemSomosMore{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 999999;
+}
+.MyContent .closeIcon{
+  position: absolute; 
+  top: -40px;
+  right: -25px;
+  font-size: 1.2rem;
+  background-color: #2FB86E;
+  padding: 8px 10px;
+  border-radius: 100%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.QuemSomosMore .MyContent{
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  width: 30%;
+  border-radius: 7px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.NossoParceiroMore{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  flex-direction: column;
+  display: none;
+}
+.NossoParceiroMore .MyContent{
+  display: flex;
+  flex-direction: column;
+  gap: 2.0rem;
+  background-color: silver;
+  padding: 20px;
+  border-radius: 7px;
+  position: relative;
+}
+.NossoParceiroMore .MyContent input{
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+}
+
+.NossoParceiroMore .MyContent .radiosButtons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.0rem;
+}
+.NossoParceiroMore .MyContent .radiosButtons span{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.NossoParceiroMore .MyContent .btnEnviar{
+padding: 20px;
+background-color: #2FB86E;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+}
+.NossoParceiroMore .MyContent .radiosButtons span label{
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+}

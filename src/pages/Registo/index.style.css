@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #E5E5E5;
+}
+h1,h2,h3{
+  margin: 0;
+}
+.HeaderRegisto {
+  background-color: #E5E5E5;
+  transition: all 0.8s;
+}
+.wrapperRegisto{
+  width: 90%;
+  display: flex;
+  max-width: 1448px;
+  margin: auto;
+  align-items: center;
+  padding: 30px 0;
+  transition: all 0.8s;
+
+}
+
+.HeaderRegisto-HomeHear{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+.HeaderRegisto-HomeHear a{
+  text-decoration: none;
+}
+.HeaderRegisto-back{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.HeaderRegisto-back p {
+  color: #6C6C80;
+  text-decoration: none;
+  font-size: 2.0rem;
+  font-family: 'Roboto', sans-serif;
+}
+.MainContent{
+  display: flex;
+  justify-content: center;
+}
+.MainContent-Form{
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+.MainContent-FormElement h2{
+  font-size: 2.0rem;
+  font-family: 'Roboto', sans-serif;
+  color: #322153;
+  margin-bottom: 2.5rem;
+}
+.MainContent-Form_dragAndDrop{
+  background: #E1FAEC;;
+  height: 25rem;
+  padding: 20px;
+  border-radius: 5px;
+}
+.MainContent-Form_dragAndDrop .dottedWrapper{
+    border: 1px dotted #34CB79;
+    border-radius: 3px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.MainContent-Form_dragAndDrop .dottedWrapper .dragAndDrop_Content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainContent-Form_Info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+._Info-input{
+  display: flex;
+  flex-direction: column;
+}
+._Info-input label{
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 7px 0;
+  color: #6C6C80;
+}
+._Info-input input{
+  border: none;
+  background-color: #F0F0F5;
+  padding: 20px;
+
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+
+  border-radius: 5px;
+}
+.MainContent-Endereco_Text, .MainContent-Itens_Text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.MainContent-Endereco_Text p, .MainContent-Itens_Text p{
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+}
+.MainContent-Itens{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.MainContent-Item{
+text-align: center;
+background-color: #E1FAEC;
+padding: 20px;
+border-radius: 5px;
+transition: all 0.8s;
+}
+.MainContent-Item:hover{
+  background-color: #b0e0cfc2;
+}
+.MainContent-Item.selected{
+  background-color: #91d7d1;
+}
+.MainContent-Form button{
+  background-color: #34CB79;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  width: 25rem;
+
+  align-self: flex-end;
+
+}
+.MyLocation{
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.SuccessoRegistro{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  flex-direction: column;
+  display: none;
+}
+
+.SuccessoRegistro .MyContent{
+  display: flex;
+  flex-direction: column;
+  gap: 2.0rem;
+  background-color: silver;
+  padding: 20px;
+  border-radius: 7px;
+  position: relative;
+}
+.MyContent .closeIcon{
+  position: absolute; 
+  top: -40px;
+  right: -25px;
+  font-size: 1.2rem;
+  background-color: #2FB86E;
+  padding: 7px 10px;
+  border-radius: 100%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
