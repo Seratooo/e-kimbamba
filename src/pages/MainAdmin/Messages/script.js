@@ -21,9 +21,10 @@ firebase.firestore().collection("Mensagens").get().then(function (querySnapshot)
  
   firebase.auth().signOut()
   .then(function () {
-      
+      window.location.href='/index.html';
   }).catch(function (error) {
       // An error happened.
+      window.location.href='/index.html';
   });
   localStorage.clear();
 

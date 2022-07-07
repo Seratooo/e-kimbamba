@@ -34,14 +34,15 @@ firebase.firestore().collection("Usuarios").doc(EmailGlobal).get().then(function
 
 
  $('#logout').on('click',()=>{
-
+  firebase.firestore().collection("Catador").doc(EmailGlobal).update({Estado: 'Offline'}).then(function (doc) {});
   firebase.firestore().collection("Usuarios").doc(EmailGlobal).update({Estado: 'Offline'}).then(function (doc) {
   
     firebase.auth().signOut()
     .then(function () {
-        
+      window.location.href='/index.html';
     }).catch(function (error) {
         // An error happened.
+        window.location.href='/index.html';
     });
     localStorage.clear();
 
