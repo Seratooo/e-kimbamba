@@ -1,0 +1,30 @@
+.ContentPedidos{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100vh;
+  z-index: 99999999999;
+  background-color: rgba(0, 0, 0, 0.882);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.WrapperPedidos span{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.WrapperPedidos button{
+  background-color: #2FB86E;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.WrapperPedidos button.concluir{
+  background-color: #6C6C80;
+}

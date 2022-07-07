@@ -158,10 +158,10 @@
               </div>
             </span>
             <span class="MainContent-ContactForm_Input">
-                <input type="text"  placeholder="Nome">
-                <input type="email" name="" id="" placeholder="Email">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button>
+                <input type="text"  placeholder="Nome" id="name" required>
+                <input type="email" name="" placeholder="Email" id="email" required>
+                <textarea name="" id="text" cols="30" rows="10" required></textarea>
+                <button type="submit">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M10 17L15 12L10 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -177,6 +177,9 @@
     <footer>
       <div class="MainContent_Wrapper footer">
         <div class="footer-icons">
+          <a href="./login.html">
+            <img width="73" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAIR0lEQVR4nO1dz2/cRBT+xrtJNyTZthRoShq1QaKFtqhIlThyQEoL4sYfgRAcOdADR05IqFf4CyrBmbYg9cQFbgnQQ0VCpBLSCoFCfjS7m13P4+D12usdjz32G68T/F26Y3+dnXnvzffm+ccGqFChQoUKFSpUqFChwv8NgrOzK7f3F6SkWyC6DmAWAIgAgAYcCj6Cwo2hc5SLG+UPn6Os3F0A9yVwc/PD5x+CCWwOuHJ7f0G6chnAs/6xsPGTjRDH1RvfhBvtWxcc0b5D3C1C7ermR6f+AAMcjk4AQEq6hb7xiXxDJBvf40LDpRiumfGD/xs+pzK+950a7knA/QJMqHN11JedDJLDIU9x/XDIk7KfG2ACmwOIMJt2OQfnTSSHQ56CfpLGmMBtggl8K4AhktVGiONaSbSh8+nmkxeMDrCXaKN8u4k2boyj8+EApwSFWwyRbFNyOOSJB6wrALCXaKP8AhKtZox8HmDNAVySk0+eguOj32uUaLWrmAtWJKgMiTbad55EmzTGPLAgQQDHxEz29iaRHOXnkScOWFgB5lpa7kSrdhQXmFeAKjo5Eq3HL2pvb8LNC8tJ2ERyxp9oo/yk+XDAUh0QF53lkRyeCj0/CqoDgLyJNtp3UYk2fj48YL4UYRLJHFE/yudLtPpVzAVGCbIVyeNPtEnzyQNLdQBQZKKN8u1IzqG5GFeeRGsmOWbyxAXrdYDXziFPJL2GEAyRnF9yov3kRYnqgOC436ZuB5A9gFyQqEHUjwFOzVqijY4jicuBgusAIK2jqHcA9Fpw2/sAEUStDkxKYKIBODVl3+N5zCUfCrwYZ5ho3S5kp40zl5/D/NUXsPN4D6s/bIKIICYbIBEe+jjuvvGA7bEUwB9sfPJMZ3zq8wkkXSxcm0NtsoaT547jwlsLEG4LstP2pCnUd7iftMYf5qrGqHcUB9gcoJ4YEC85FMsN84UTPDt2/MUZXFw6B0e2QActkNuNcao6ktNuBrwx6B3FBdYVAKgiefhc2txABJAi0pqnp3Fx6RyE6znBXwnRqE8byWpuulXMAWYJGnwykpyEJ9FG0Dw9jVeWzsORbchOC+T2AKXkZH+yLmkVc4FRggD9xOIlR92PPtqac74TWqCDfZDbU0hOtF9133p50q/ivGBcAeqoN5KciKOS0JybxqvXz0O47Ygc8STapFXMAeYVEG7rot7kCqYezbkZXLrhy9E+yO0q+lE71Vye0gdHWvAVYp2n3r9aY5peREs3U98JD+6tQx4AYnIqVCfYfMwlP9gcIPe3ExLtMJ8Qx1Xzk9Ccm8Hltxfx6711yA4gJhuAU0+Met13FlEHGDvgvcf0LhG+ImCebRRMaM7N4NLSeTz4fh10QMDEFOB4U9QFx3DbfBXngXEOkIQvy2h8HyfmZ3H5+iIQSsxcFXo0d3EgSxI+yzsEfpyYn8Vr77wEh7zEHC7W9Fvg9NtlLrBXwmXB8TMzuLS0CCHboIM2yHX7Z5L39um2yzw4sg4AgJNnZ7H4xhnIbru/PbVboWfBkXYAAMxdOAXILkBuIRW6KdjvB5QRvp1FuG10R+0Q1AFlxZOHf3tbUeEtdq7HXLhwpB2wtbGLtZ8eQ9SngNpkZuPbrAOOrAO2N/fwy701kNPw7iOL4MZOWq0f5qr5eZElCW/wDoEfWxu7WP52FVI0hm7imyba6FVTGxJk7gCB91FiJ2xt7OLnu2uQfuQPXYrwYXIpPO6mDg/Yfqzj9GfLpN5BAIMlnbjbCEh++80PrqUew/bmHlburMIVxyBGrgONfmdwTi05uotx+58ustiOLQeIhvf2fnirJxImNswFwsYXAKi1nfr7tzf3sHxnFTJkfM5EW/o6QBybBhAMTkQGGxibhpZd2FFhLnWepi759cYfNZp5HaDuhwOWfqogOaqSJmZm/N8gRQNion8jhlVyDkkdoFuieZ5E0+HfzT2sRI0f9JQ56qP8rMGRBuy/lqIbrGnU6+YZb/zi3hXjgLVfS8n9ZLTW+LtYudPf59fTG78sUR+GpZ8qiDe+iTyp5hw1vr/VzCM5nCvTFOwvaGSdWJyBXFeiVvPqxa2NHazcXQM5U0DdL7LG964YB1gfzk1r/KDyVHH7/QgBOA7Wf/wT3XYPf/2+hZW7a5AivfGHpWz0MZd4rvnKzAorF+Oy7oiGTjk1oN7Ao5UneLT8xGtPPAPRv7ZjtmUs77tiBdYB6SRnAGcCqPUgnFnv/w1eUXJyJU++HREPrLwlma8O6B8XwtteShcCon9Fs+hEa39HNKY6wOMnGgEipPW2ItlOhZ4WFusAQG0gTdQr+kmTaLNxTVemBf1BKeoA77iKO9pvHHe072z5yNRR+WH111JMJMckkqP8ol7KtlEHWPmxDq89+BRpZ4lkDnkyXZnpuXlgsQ4ATCUnf9QHfH55Uo8xL0pbB4wn0QbHk7hcKKgO8I6Pckf5ZdnbJ8+HB1YvxgFcOyJ7iTbKN9k4cMDar6WUcW/PKU9csPjTxfkTrZnk2Eu0R7gO8I6Pcu1Jjkmi1QcHD6zclA/ag9YhTbTxjuKC5T9hcjj39kegDgDGlWijfFsVOhcK/BMm/JKTTZ5Gv1M/RntvSAKF1AHe8eG2/3n8iTbadxFRHwajA+QukZj1W3x1gGkkc0S9mh9C+qeGE8D3liSJ+4OPCZEcjVZ9bqAYbnLyTHZUnOQkRv532rMG4PtbkqJ2E8BW1JjRiYURNmbQ9s8xP+ai4Rrq/T/oOR8nslKCzQG7n8w/7PZqVwXoGwA7SYk23lG63KB60VoXyelzQ4qo3wHwNXrO6/j85dK+IVShQoUKFSpUqFChQoXy4z/97kmajkD/7AAAAABJRU5ErkJggg==">
+          </a>
           <a href="#facebook">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_24338_324)">
@@ -192,7 +195,10 @@
           <a href="#instagram">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.7639 0.0151367C5.30083 0.0151367 0.0112305 5.30462 0.0112305 11.7678V48.2382C0.0112305 54.7012 5.30071 59.9889 11.7639 59.9889H48.2343C54.6974 59.9889 59.985 54.7013 59.985 48.2382V11.7678C59.985 5.30474 54.6974 0.0151367 48.2343 0.0151367H11.7639ZM14.7198 9.91202C17.8187 9.91202 19.7275 11.9464 19.7864 14.6205C19.7864 17.2356 17.8186 19.3272 14.6599 19.3272H14.6017C11.5618 19.3272 9.59701 17.2357 9.59701 14.6205C9.59701 11.9464 11.6213 9.91202 14.7198 9.91202H14.7198ZM41.4246 22.4106C47.3844 22.4106 51.852 26.3059 51.852 34.6768V50.3037H42.7948V35.7245C42.7948 32.0609 41.484 29.5614 38.2063 29.5614C35.704 29.5614 34.2126 31.2461 33.5577 32.8735C33.3185 33.4558 33.2597 34.269 33.2597 35.0835V50.3037H24.2025C24.2025 50.3037 24.3214 25.6069 24.2025 23.0497H33.2616V26.9092C34.4652 25.0522 36.6181 22.4106 41.4246 22.4106V22.4106ZM10.1313 23.0517H19.1884V50.3038H10.1313V23.0517V23.0517Z" fill="white"/>
-            </svg>              
+            </svg>          
+          </a>
+          <a href="" id="logout">
+            <img width="60" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAFh0lEQVR4nO2dTWhcVRTH/+dOPpspFXThF6IQaTW1ac1M49cirYpUW0QqCMaFIo2rgh/UZqqLQTFprUWhq6ZFukhcCtJKK34kgqideYn9irS04EKKLnRRm6RmknnHhU25GfJm3kzufXObOb9NOGdeznnMj3vvu+/NJIRrtF7Y3rji8vIeYu4GsBpACwSdSQBnAR68uqxpYLwtnbPRhADg4R/fuSPX4H9JjHYbTZYgJ+tn1OafHvngkunCqvXC9kaRUTZrZ+r9I23j6QbThdWKy/HXREZFrGueym0zXVQRo9t00VqB2H/JdE0F4H7TRWsFJlptuqYCEDddtIYw/t4p0wWFxSFCHEOEOIYIcQwR4hgixDFEiGOIEMcQIY4hQhxDhDiGCHEMEeIYIsQxRIhj1FX7BG4EmPiC8mmQCScBmmFCKzG/AOBR071ESHF8Jk4vv9LUP7IhPVvw2v5ENvW86YaUyKbYdNElxE4v2f9hlA1lDQlmzEv07426qUxZATDxQRCuzx7rxt6+PZaPvQfQTUzoG030jdnoKyMkEJXRo1heDQB4FeCtxPx9h7fzMStdbRRdChCrST1monu0ME6sjtmQIkIC8JV/tx4rnwrXEytSREgAyufn9Di7vu8wgDcKDjMuRYQE80rnz6l5n+r0kv2fwLIUERJMQz6GL5KZHbfqSdtSREhxWpliIx3ertv0pCZF31THidXxRLa3azENRUhJaCWxPxwg5U3Ml9IC0NHFSBEhoaCVxPxdwPRlVIoICc8qprph21JESHmsYqr7qsN76xY9aVKKCCmfNcQN39qSIkIqYw3Q8M36E6mb9aQJKSKkQojR7it8XZjXpOi0AHQkzD5FhCyOdQslF7NPESGWqHT6EiEWqURKNZ+pTwMYYMLQTP3M2dPtH02W/I0blEQ29TqAjwvSE0z+ptHEnh/0ZFWEMOFSLO8/k+nccyrq3tUirJRqTFnTtSYDCH+XOHIhxDhQazLmCCMl8k+dMKkhPU5kU08DOADgzqjPxSHmpGyKfIRcXVb/a0Gq1mXMESdWx+Sy1zEiF9J0dbptfoZ6APwe9Xk4yASTvynyNeTa3+c6MRd7yb5jAO6K+jyqRanL32pMWT3JzK61VehbdcLsRaohpNFXfDSR7V3wxtxSJezGsJq3TnIADiofQ5PxxjPjbemJKp2HdZy/dbKU8JL9VOz1ABmTAG/2krtHCo+Xy16LlCsDECHWqEQGIF/YWSy/LJQsZ80oREZIhTDhlPLxZGG+yMjYUkoGICOkUk4DuScynfv+1pOVTlM6MkLK5zRT7vHRxL6/9KQJGYAIKZdzxLNP2ZIBiJByOEc8uyG7fu+fetKkDEDWkJDweSa10UvalQHICAkBn2dSG0YTfX/oWRsyABkhpbhInO/ykrvDjIxQ+4xSyAgJJhfL49mQa4YRGYAIKQIdPvFQ/7zn/7ZlACIkEF/hcz1OZna9DMsyABESSN0s/6bHvuIdBYcYlwGIkCL4zXpEPE+QFRmACAmEFXXqcT7m9xDjMwDHfcVdNmQA8sQwECacGu1ofBCU9qPsKyMkAGK0d4z+W7huWEeEFIGY+jq81Ltdw+kFN9CJbO9W0z1lp14cRYz3J+K5F5OZ1KdM7BHHckz5VcTUzcBGXPt/wqYQIaHg+5iwFyAw+fj/p51OMmU5hghxDBHiGCLEMUSIY4gQxxAhjiFCHEOEOIYIcQwR4hgixDFEiGOIEMcQIY6hACzZryNHwD+mCyoA46aL1hDG3zvFREOlDxMWgpgHTddUl1dcGQBw0nThGmBsqqXpkOmi6uK9+6frZ9RmBHzFV1iQsXwsv2W8LZ0zXfj6o/q28XRD81RuG8DdAB4AEDfd7AZnAsAZYh6camk6ZEMGAPwHd+R0JfooDwcAAAAASUVORK5CYII=">
           </a>
         </div>
       </div>
@@ -220,48 +226,132 @@
       </div>
     </div>
 
+    
     <div class="NossoParceiroMore">
       <div class="MyContent">
-          <input type="text" placeholder="Nome">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="WhatsApp">
+          <input type="text" placeholder="Nome" id="Name" readonly="">
+          <input type="text" placeholder="Email" id="Email" readonly="">
+          <input type="text" placeholder="WhatsApp" id="whatsapp">
           <div class="radiosButtons">
 
             <span>
-              <label for="">Catador</label>
-              <input type="radio" name="work" id="">
+              <label for="Catador">Catador</label>
+              <input type="radio" name="work" id="Catador" value="Catador" checked>
             </span>
 
             <span>
-              <label for="">Dona/Chefe de Casa</label>
-              <input type="radio" name="work" id="">
+              <label for="Dona/Chefe de Casa">Dona/Chefe de Casa</label>
+              <input type="radio" name="work" id="Dona/Chefe de Casa" value="Dona/Chefe de Casa" disabled>
             </span>
 
             <span>
-              <label for="">Produtor Artezanal</label>
-              <input type="radio" name="work" id="">
+              <label for="Produtor Artezanal">Produtor Artezanal</label>
+              <input type="radio" name="work" id="Produtor Artezanal" value="Produtor Artezanal" disabled>
             </span>
 
             <span>
-              <label for="">Organizador de Evento</label>
-              <input type="radio" name="work" id="">
+              <label for="Organizador de Evento">Organizador de Evento</label>
+              <input type="radio" name="work" id="Organizador de Evento" value="Organizador de Evento" disabled>
             </span>
 
             <span>
-              <label for="">Empresas de recolhas</label>
-              <input type="radio" name="work" id="">
+              <label for="Empresas de recolhas">Empresas de recolhas</label>
+              <input type="radio" name="work" id="Empresas de recolhas" value="Empresas de recolhas" disabled>
             </span>
 
           </div>
-          <button class="btnEnviar">Enviar</button>
+          <button class="btnContinuar">Continuar</button>
           <p class="closeIcon">X</p>
       </div>
 
     </div>
 
+    <div class="NossoParceiroSection2">
+      <div class="MyContent">
+          <input type="text" placeholder="Endereço" id="Endereco" required="">
+          <input type="date" placeholder="Data de Nascimento" id="Data">
+          <input type="text" placeholder="Disponibilidade" id="Disponibilidade" required="">
+          <select name="" id="Genero">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+          </select>
+          <button class="btnConcluir">Concluir</button>
+          <p class="closeIcon">X</p>
+      </div>
+
+    </div>
+
+    <div class="MessageSent">
+      <div class="MyContent message">
+        <h2>Mensagem enviada!</h2>
+        <p class="closeIcon">X</p>
+      </div>
+      <div class="MyContent loading">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+          <g transform="rotate(0 50 50)">
+            <rect x="46.5" y="33.5" rx="3.5" ry="2.5" width="7" height="5" fill="#2fb86e">
+              <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1.1111111111111112s" begin="-1.0101010101010102s" repeatCount="indefinite"></animate>
+            </rect>
+          </g><g transform="rotate(32.72727272727273 50 50)">
+            <rect x="46.5" y="33.5" rx="3.5" ry="2.5" width="7" height="5" fill="#2fb86e">
+              <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1.1111111111111112s" begin="-0.9090909090909091s" repeatCount="indefinite"></animate>
+            </rect>
+          </g><g transform="rotate(65.45454545454545 50 50)">
+            <rect x="46.5" y="33.5" rx="3.5" ry="2.5" width="7" height="5" fill="#2fb86e">
+              <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1.1111111111111112s" begin="-0.8080808080808081s" repeatCount="indefinite"></animate>
+            </rect>
+          </g><g transform="rotate(98.18181818181819 50 50)">
+            <rect x="46.5" y="33.5" rx="3.5" ry="2.5" width="7" height="5" fill="#2fb86e">
+              <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1.1111111111111112s" begin="-0.7070707070707071s" repeatCount="indefinite"></animate>
+            </rect>
+          </g><g transform="rotate(130.9090909090909 50 50)">
+            <rect x="46.5" y="33.5" rx="3.5" ry="2.5" width="7" height="5" fill="#2fb86e">
+              <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1.1111111111111112s" begin="-0.6060606060606061s" repeatCount="indefinite"></animate>
+            </rect>
+          </g><g transform="rotate(163.63636363636363 50 50)">
+            <rect x="46.5" y="33.5" rx="3.5" ry="2.5" width="7" height="5" fill="#2fb86e">
+              <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1.1111111111111112s" begin="-0.5050505050505051s" repeatCount="indefinite"></animate>
+            </rect>
+          </g><g transform="rotate(196.36363636363637 50 50)">
+            <rect x="46.5" y="33.5" rx="3.5" ry="2.5" width="7" height="5" fill="#2fb86e">
+              <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1.1111111111111112s" begin="-0.40404040404040403s" repeatCount="indefinite"></animate>
+            </rect>
+          </g><g transform="rotate(229.0909090909091 50 50)">
+            <rect x="46.5" y="33.5" rx="3.5" ry="2.5" width="7" height="5" fill="#2fb86e">
+              <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1.1111111111111112s" begin="-0.30303030303030304s" repeatCount="indefinite"></animate>
+            </rect>
+          </g><g transform="rotate(261.8181818181818 50 50)">
+            <rect x="46.5" y="33.5" rx="3.5" ry="2.5" width="7" height="5" fill="#2fb86e">
+              <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1.1111111111111112s" begin="-0.20202020202020202s" repeatCount="indefinite"></animate>
+            </rect>
+          </g><g transform="rotate(294.54545454545456 50 50)">
+            <rect x="46.5" y="33.5" rx="3.5" ry="2.5" width="7" height="5" fill="#2fb86e">
+              <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1.1111111111111112s" begin="-0.10101010101010101s" repeatCount="indefinite"></animate>
+            </rect>
+          </g><g transform="rotate(327.27272727272725 50 50)">
+            <rect x="46.5" y="33.5" rx="3.5" ry="2.5" width="7" height="5" fill="#2fb86e">
+              <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1.1111111111111112s" begin="0s" repeatCount="indefinite"></animate>
+            </rect>
+          </g>
+          </svg>
+      </div>
+    </div>
+    <div class="StartSession">
+      <div class="MyContent">
+        <h2>Inicie a sessão primeiro, ou crie uma conta!</h2>
+        <p class="closeIcon">X</p>
+      </div>
+    </div>
+    <div class="login">
+       <a href="./login.html"><button>Entrar/Inscrever</button></a>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
     <script src="./src/config/server.js"></script>
     <script src="/src/pages/Home/script.js"></script>
 </body>

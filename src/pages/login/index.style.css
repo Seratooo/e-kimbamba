@@ -1,0 +1,159 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Jost', sans-serif;
+
+	background: linear-gradient(to bottom, #201536, #322153, #322153);
+}
+.contentLogin{
+	height: calc(100vh - 84px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Jost', sans-serif;
+
+}
+.mainLogin{
+	width: 350px;
+	height: 500px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+@media (max-width: 375px){
+	.mainLogin{
+		width: 95%;
+	}
+}
+
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px 0 0;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #6d44b8;
+}
+.login{
+	height: 460px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: #573b8a;
+	transform: scale(.9);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1.2);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.5);
+}
+
+.mainLogin div.login > span > label{
+	font-size: 1rem;
+	padding: 15px 0 0;
+}
+
+.MainHeader{
+  /* background-color: #E5E5E5; */
+  transition: all 0.8s;
+	padding: 10px 20px;
+}
+.MainHeader span {
+  display: flex;
+  align-items: center;
+}
+
+
+.MessageSent{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  flex-direction: column;
+  display: none;
+}
+
+.MessageSent .MyContent.message{
+  display: flex;
+  flex-direction: column;
+  gap: 2.0rem;
+  background-color: silver;
+  padding: 20px;
+  border-radius: 7px;
+  position: relative;
+  color:#444450;
+  font-family: 'Roboto', sans-serif;
+
+}
+.MessageSent .MyContent.message{
+  display: none;
+}
+
+#labelIsforWork{
+	font-size: 12px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	width: 40%;
+	margin: auto;
+
+}
+input#isWork {
+	width: 10%;
+}

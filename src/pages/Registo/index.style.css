@@ -121,6 +121,17 @@ h1,h2,h3{
 
   border-radius: 5px;
 }
+._Info-input select{
+  border: none;
+  background-color: #F0F0F5;
+  padding: 20px;
+  color: #6C6C80;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+
+  border-radius: 5px;
+}
 .MainContent-Endereco_Text, .MainContent-Itens_Text{
   display: flex;
   justify-content: space-between;
@@ -181,7 +192,7 @@ transition: all 0.8s;
   display: none;
 }
 
-.SuccessoRegistro .MyContent{
+.SuccessoRegistro .MyContent.message{
   display: flex;
   flex-direction: column;
   gap: 2.0rem;
@@ -189,7 +200,14 @@ transition: all 0.8s;
   padding: 20px;
   border-radius: 7px;
   position: relative;
+  color:#444450;
+  font-family: 'Roboto', sans-serif;
+
 }
+.SuccessoRegistro .MyContent.message{
+  display: none;
+}
+
 .MyContent .closeIcon{
   position: absolute; 
   top: -40px;
