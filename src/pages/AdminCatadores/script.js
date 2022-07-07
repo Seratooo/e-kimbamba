@@ -11,17 +11,22 @@ firebase.firestore().collection("Usuarios").doc(EmailGlobal).get().then(function
    $('.cardName.Estado').text(dados.Estado);
    $('.numbers.corridas').text(dados.QntdCorridas);
    $('.numbers.montante').text(dados.Montante);
- })
+ });
 
  $('.card.estados').on('click',()=>{
     if($('.cardName.Estado').text() == 'Offline'){
       firebase.firestore().collection("Usuarios").doc(EmailGlobal).update({Estado: 'Online'}).then(function (doc) {
         $('.cardName.Estado').text('Online');
       });
+      
+      firebase.firestore().collection("Catador").doc(EmailGlobal).update({Estado: 'Online'}).then(function (doc) {
+      });
 
     }else{
       firebase.firestore().collection("Usuarios").doc(EmailGlobal).update({Estado: 'Offline'}).then(function (doc) {
         $('.cardName.Estado').text('Offline');
+      });
+      firebase.firestore().collection("Catador").doc(EmailGlobal).update({Estado: 'Offline'}).then(function (doc) {
       });
     }
  })
@@ -56,6 +61,9 @@ firebase.firestore().collection("Usuarios").doc(EmailGlobal).get().then(function
         firebase.firestore().collection("Usuarios").doc(EmailGlobal).update({lat: position.coords.latitude, lnt:position.coords.longitude}).then(function (doc) {
          // console.log(position.coords.latitude, position.coords.longitude);
         })
+        
+        firebase.firestore().collection("Catador").doc(EmailGlobal).update({lat: position.coords.latitude, lnt:position.coords.longitude}).then(function (doc) {
+        });
 
       });
     

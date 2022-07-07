@@ -228,7 +228,7 @@ btnContinuar.addEventListener("click",function(){
       console.log(dataRegisto);
       NossoParceiroSection2.style.display = 'none';
 
-      firebase.firestore().collection(dataRegisto['Cargo']).add(dataRegisto).then(()=>{
+      firebase.firestore().collection(dataRegisto['Cargo']).doc(localStorage.getItem('Email')).set(dataRegisto).then(()=>{
         
         firebase.firestore().collection('Usuarios').doc(localStorage.getItem('Email')).update(dataRegisto).then(()=>{
           console.log('Adicionado')
