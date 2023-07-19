@@ -1,7 +1,7 @@
 # e-kimbamba
 
 ### Description
-Start-up que com o objectivo de enraizar a cultura de reciclagem e reutilização na sociedade angolana e melhorar os processos e as condições de trabalho dos catadores de lixo de modos a tornar uma actividade formal e lucrativa por intermédio de políticas, parcerias e suporte tecnológico.
+Start-up em desenvolvimento com o objectivo de enraizar a cultura de reciclagem e reutilização na sociedade angolana e melhorar os processos e as condições de trabalho dos catadores de lixo de modos a tornar uma actividade formal e lucrativa por intermédio de políticas, parcerias e suporte tecnológico.
 
 - link: [e-kimbamba.app](https://e-kimbamba.vercel.app/)
 
